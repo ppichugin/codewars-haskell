@@ -1,0 +1,3 @@
+# Codewars solutions on Haskell
+
+---
