@@ -1,13 +1,12 @@
 module Codewars.Triangles where
 
-import Data.List (sort)
+import           Data.List                      ( sort )
 
 -- simple solution
 isTriangle :: Int -> Int -> Int -> Bool
-isTriangle a b c
-  | (a + b <= c) || (a + c <= b) || (b + c <= a) = False
-  | (a <= 0) || (b <= 0) || (c <= 0) = False
-  | otherwise = True
+isTriangle a b c | (a + b <= c) || (a + c <= b) || (b + c <= a) = False
+                 | (a <= 0) || (b <= 0) || (c <= 0) = False
+                 | otherwise                        = True
 
 -- with sort function
 -- isTriangle :: Int -> Int -> Int -> Bool
